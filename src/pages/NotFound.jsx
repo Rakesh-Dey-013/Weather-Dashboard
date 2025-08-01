@@ -11,7 +11,7 @@ const NotFound = () => {
           The page you're looking for doesn't exist or has been moved.
         </p>
         <Link
-          to="/"
+          to="/Weather-Dashboard"
           className="inline-block px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg text-white transition-colors"
         >
           Go to Dashboard

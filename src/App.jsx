@@ -15,7 +15,7 @@ function App() {
         <BrowserRouter>
           <div className="min-h-screen bg-zinc-900 text-gray-400">
             <Routes>
-              <Route path="/" element={<Dashboard />} />
+              <Route path="/Weather-Dashboard" element={<Dashboard />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </div>
