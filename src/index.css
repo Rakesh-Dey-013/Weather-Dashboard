@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import 'leaflet/dist/leaflet.css';
+
+
+body {
+    background-color: #18181b;
+    /* bg-zinc-900 */
+    color: #9ca3af;
+    /* text-gray-400 */
+}
+
+.leaflet-container {
+    background-color: #27272a;
+    /* bg-zinc-800 */
+    border-radius: 0.5rem;
+    /* rounded-lg */
+    height: 400px;
+    width: 100%;
+}
+
+.widget {
+    /* background-color: transparent;
+    backdrop-filter: blur(10px); */
+    /* bg-zinc-800 */
+    border-radius: 0.75rem;
+    /* rounded-xl */
+    padding: 1rem;
+    /* p-4 */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    /* shadow-lg */
+    backdrop-filter: blur(4px);
+    /* backdrop-blur-sm */
+    border: 1px solid #00472c;
+    /* border-zinc-700 */
+    transition: all 0.3s ease;
+    /* transition-all duration-300 */
+}
+
+.widget:hover {
+    border-color: #52525b;
+    /* hover:border-zinc-600 */
+}
+
+
+.spotlight {
+    position: relative;
+    overflow: hidden;
+}
+
+.spotlight::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle,
+            rgba(255, 255, 255, 0.05) 0%,
+            rgba(255, 255, 255, 0) 70%);
+    animation: rotate 15s linear infinite;
+    z-index: 0;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
