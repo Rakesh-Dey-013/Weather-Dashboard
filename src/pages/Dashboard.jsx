@@ -64,7 +64,7 @@ const Dashboard = () => {
       <div className="flex flex-col md:flex-row gap-4">
         {/* SideBar */}
         <div className="md:w-64 flex-shrink-0">
-          <Sidebar />
+          <SideBar />
         </div>
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500 rounded-full filter blur-3xl opacity-20"></div>
 
