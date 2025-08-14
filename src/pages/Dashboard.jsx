@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { useWeatherContext } from '../contexts/WeatherContext'
 import { useGeolocation } from '../hooks/useGeolocation'
 import { useWeatherData } from '../hooks/useWeather'
-import Sidebar from '../components/SideBar'
+import SideBar from '../components/SideBar'
 import CurrentWeather from '../components/CurrentWeather'
 import HourlyForecast from '../components/HourlyForecast'
 import DailyForecast from '../components/DailyForecast'
@@ -62,7 +62,7 @@ const Dashboard = () => {
   return (
     <div className="container mx-auto p-4">
       <div className="flex flex-col md:flex-row gap-4">
-        {/* Sidebar */}
+        {/* SideBar */}
         <div className="md:w-64 flex-shrink-0">
           <Sidebar />
         </div>
